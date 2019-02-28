@@ -25,7 +25,7 @@ module.exports = {
     '~/plugins/events.js',
     '~/plugins/font-awesome.js',
     '~/plugins/http.js',
-    '~/plugins/vuetify.js',
+    '~/plugins/vuetify.js', 
     '~/plugins/vue-smooth-picker.js',
     '~/plugins/vue-croppa.js',
     {src: '~/plugins/vue-sample-uploader.js', ssr: false},
@@ -44,11 +44,19 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/axios',
     '@nuxtjs/moment',
+    '@nuxtjs/apollo',
     ['@nuxtjs/component-cache', {
       max: 10000,
       maxAge: 1000 * 60 * 60
     }],
   ],
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:8000/api/basic/graphiql',
+      }
+    }
+  },
   /*
   ** Customize the progress bar color
   */
