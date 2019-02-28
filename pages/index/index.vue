@@ -106,7 +106,8 @@
                             <b>For Mac / Linux</b>
                           </v-flex>
                           <code>
-    make lan
+    > npm install (to install dependencies)
+    > make lan (dynamic configuration between port and ip)
                           </code><br>
                           <small>
                             REASON: i use pytho3 + makefile so that the ip and port will be dynamic. not like npm run dev. you will put the ip and port manually.
@@ -120,7 +121,8 @@
                             <b>For Windows</b>
                           </v-flex>
                           <code>
-    npm run dev
+    > npm install (to install dependencies)
+    > npm run dev (default ip and port)
                           </code>
                           </v-flex>
                         </v-flex>
