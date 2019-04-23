@@ -16,8 +16,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js + Vuetify.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   plugins: [
@@ -45,6 +44,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/moment',
     '@nuxtjs/apollo',
+    'nuxt-material-design-icons',
     ['@nuxtjs/component-cache', {
       max: 10000,
       maxAge: 1000 * 60 * 60
